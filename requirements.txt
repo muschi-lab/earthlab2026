@@ -1,0 +1,29 @@
+# EARTHLAB 2026 — Python dependencies
+# Install with: pip install -r requirements.txt
+
+# Core
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+
+# Machine learning (PyTorch)
+torch
+torchvision
+scikit-learn
+
+# Bayesian statistics
+pymc
+arviz
+
+# Climate / earth science data
+xarray
+netCDF4
+
+# Image processing
+pillow
+
+# Jupyter
+jupyter
+notebook
