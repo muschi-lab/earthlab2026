@@ -1,4 +1,4 @@
-![EARTHLAB 2026](assets/form-banner.png)
+<img src="assets/form-banner.png" alt="EARTHLAB 2026" width="400">
 
 # EARTHLAB 2026
 
