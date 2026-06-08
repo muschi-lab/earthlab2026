@@ -20,6 +20,7 @@ arviz
 # Climate / earth science data
 xarray
 netCDF4
+cartopy
 
 # Image processing
 pillow

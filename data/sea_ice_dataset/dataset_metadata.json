@@ -1,0 +1,76 @@
+{
+  "name": "Arctic Sea-Ice Image Classification Dataset",
+  "version": "2.0",
+  "created": "2026-06-02",
+  "task": "3-class image classification",
+  "classes": {
+    "ice": "mostly/fully ice-covered (mean conc >=85%)",
+    "open_water": "open ocean, ~no ice (mean conc <=12%)",
+    "miz": "marginal ice zone / ice edge (mean 18-78% with >=40% intermediate pixels)"
+  },
+  "image": {
+    "format": "PNG",
+    "mode": "grayscale_8bit",
+    "size_px": [
+      128,
+      128
+    ],
+    "channels": 1,
+    "pixel_meaning": "gray = ice concentration %, 0=water 255=full ice",
+    "effective_resolution_km": 3.125,
+    "native_tile_px": 32,
+    "upscaled_to_px": 128
+  },
+  "splits": {
+    "train": {
+      "counts": {
+        "ice": 1600,
+        "open_water": 1600,
+        "miz": 1600
+      },
+      "total": 4800
+    },
+    "test": {
+      "counts": {
+        "ice": 400,
+        "open_water": 400,
+        "miz": 400
+      },
+      "total": 1200
+    },
+    "test_2019": {
+      "counts": {
+        "ice": 600,
+        "open_water": 600,
+        "miz": 600
+      },
+      "total": 1800
+    },
+    "test_2024": {
+      "counts": {
+        "ice": 600,
+        "open_water": 600,
+        "miz": 600
+      },
+      "total": 1800
+    }
+  },
+  "split_notes": {
+    "train": "2023 dates",
+    "test": "2023 held-out dates (by-date, no leakage)",
+    "test_2019": "2019 out-of-sample year (low-ice)",
+    "test_2024": "2024 out-of-sample year"
+  },
+  "total_images": 9600,
+  "balanced": true,
+  "source": {
+    "product": "University of Bremen ASI AMSR2 sea-ice concentration",
+    "grid": "Arctic3125 (3.125 km)",
+    "version": "v5.4",
+    "auth_required": false,
+    "url": "https://data.seaice.uni-bremen.de/",
+    "citation": "Spreen, Kaleschke, Heygster (2008), JGR 113, C02S03, doi:10.1029/2005JC003384"
+  },
+  "region": "pan-Arctic ice edge (incl. Barents Sea)",
+  "year_calibration": 2023
+}
