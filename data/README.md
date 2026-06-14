@@ -14,6 +14,7 @@ Datasets for the EARTHLAB 2026 practicals, listed in the order they are used dur
 ## Wednesday — Bayesian inference
 
 - **Glac_Melt.csv** — Daily glacier melt vs air temperature, Spitsbergen, summer 1999 (data courtesy of Prof. Gareth Rees), for the Bayesian practical (`04_bayesian_glacier_melt.ipynb`). Columns: `Day` (day of year), `AvTemp` (°C), `Melt` (mm).
+- **bayesian_workgroup/** — SST (ERSSTv5) and Arctic sea-ice datasets for the three Bayesian group exercises (per-cell change points, change-point model comparison, sequential ice-free forecast). Task brief (`EARTHLAB_Bayesian_Group_Tasks.pdf`) and a per-group README are inside the folder.
 
 ---
 
